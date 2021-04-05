@@ -5,10 +5,33 @@
 <script src="./p5.play.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA8NQMjcn20QwDjtp-mybgzq6m8y45W6W0",
+    authDomain: "soccer-game-1b9f5.firebaseapp.com",
+    projectId: "soccer-game-1b9f5",
+    storageBucket: "soccer-game-1b9f5.appspot.com",
+    messagingSenderId: "785306855736",
+    appId: "1:785306855736:web:72dc3427a25bef14edb9cd"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 
   </head>
   <body>
       <script src="sketch.js"></script>
+      <script src="js/Form.js"></script>
+      <script src="js/Game.js"></script>
+      <script src="js/Player.js"></script>
   
 
 </body></html>
