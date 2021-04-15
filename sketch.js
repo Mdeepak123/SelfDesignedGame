@@ -3,6 +3,7 @@ var gameState = 0;
 var playerCount;
 var form, game, player;
 var backgroundImg, redPlayer1, redPlayer2, bluePlayer1, bluePlayer2,backgroundImg2,ball,ballImg;
+var soccerPlayers, plr, allplayers, index;
 
 var r1, r2, b1, b2;
 
