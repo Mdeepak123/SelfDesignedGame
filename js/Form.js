@@ -20,7 +20,7 @@ class Form{
       this.title.style('font-size', '70px');
       this.button.position(displayWidth/2-30,displayHeight/2)
       this.reset.position(200,200);
-      this.input.position(displayWidth/2 - 40,displayHeight/2 - 80);
+      this.input.position(displayWidth/2 - 40,displayHeight/2 - 50);
       
       this.title.style('stroke', 'white');
       this.title.style('color', 'red');

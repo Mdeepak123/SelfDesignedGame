@@ -24,6 +24,8 @@ class Player {
       var playerIndex = "players/player" + this.index;
       database.ref(playerIndex).set({
         name:this.name,
+        x:this.x,
+        y:this.y
       });
     }
   
@@ -36,9 +38,12 @@ class Player {
 
     writePosition(x,y){
       database.ref("players/player").set({
-        x:soccerPlayers[index-1].x,
-        y:soccerPlayers[index-1].y
+        x:player.x,
+        y:player.y
       });
+
+      //player.x = soccerPlayers[index-1].x;
+      //player.y = soccerPlayers[index-1].y;
 
       player.x = player.x+x;
       player.y = player.y+y;

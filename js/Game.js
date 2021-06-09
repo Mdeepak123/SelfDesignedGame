@@ -65,36 +65,36 @@ class Game {
         x = displayWidth - allplayers[plr].x;
         y = displayHeight-allplayers[plr].y;
 
-        soccerPlayers[index-1].x = player.x;
-        soccerPlayers[index-1].y = player.y;
-
         if(index=player.index){
 
           stroke(10);
           fill("red");
           eclipse(soccerPlayers[index-1].x,soccerPlayers[index-1].y, 40,40);
         }
+
+        soccerPlayers[index-1].x = player.x;
+        soccerPlayers[index-1].y = player.y;
       
 
       }
 
       if(keyIsDown(UP_ARROW) && player.index !== null){
-        player.y +=10;
+        player.writePosition(0,-10);
         player.update();
       }
 
       if(keyIsDown(DOWN_ARROW)&& player.index !== null){
-        player.y -=10;
+        player.writePosition(0,10);
         player.update();
       }
 
       if(keyIsDown(RIGHT_ARROW) && player.index !== null){
-        player.x +=10;
+        player.writePosition(10,0);
         player.update();
       }
 
       if(keyIsDown(LEFT_ARROW) && player.index !== null){
-        player.x -=10;
+        player.writePosition(-10,0);
         player.update();
       }
 
